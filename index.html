@@ -368,9 +368,9 @@
     }
     .team-heading em { font-style: italic; color: var(--gold); }
     .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-    .team-member { display: grid; grid-template-columns: 260px 1fr; gap: 0; }
+    .team-member { display: flex; flex-direction: column; gap: 0; }
     .team-photo {
-      position: relative; aspect-ratio: 1/1; background: var(--dark-3);
+      position: relative; aspect-ratio: 1/1; width: 100%; max-width: 420px; background: var(--dark-3);
       overflow: hidden; display: flex; align-items: center; justify-content: center;
     }
     .team-photo-letter {
@@ -384,22 +384,22 @@
       color: var(--muted); display: flex; align-items: center; gap: 8px;
     }
     .team-photo-label::before { content: '—'; }
-    .team-info { padding: 0 40px 0 36px; }
+    .team-info { padding: 22px 4px 0 4px; }
     .team-name {
-      font-family: var(--f-display); font-size: clamp(28px, 2.5vw, 40px);
+      font-family: var(--f-display); font-size: clamp(24px, 2.1vw, 32px);
       font-weight: 600; font-style: normal; color: var(--cream); letter-spacing: -0.015em;
-      margin-bottom: 6px; line-height: 1.1;
+      margin-bottom: 5px; line-height: 1.1;
     }
     .team-role {
-      font-family: var(--f-ui); font-size: var(--t-micro); font-weight: 300;
+      font-family: var(--f-ui); font-size: 9.5px; font-weight: 300;
       letter-spacing: 0.22em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 28px;
+      color: var(--gold); margin-bottom: 18px;
     }
     .team-bio {
-      font-family: var(--f-display); font-size: var(--t-body);
-      line-height: 1.7; color: var(--muted);
+      font-family: var(--f-display); font-size: 13.5px;
+      line-height: 1.6; color: var(--muted);
     }
-    .team-bio p + p { margin-top: 16px; }
+    .team-bio p + p { margin-top: 12px; }
 
     /* ══════════════════════════════════════════════════════
        06  FAQ
